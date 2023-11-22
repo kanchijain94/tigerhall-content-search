@@ -33,13 +33,13 @@ const FrameThreeColumnunsplasheq9sa7t: React.FC<
         <div className="relative w-full">
           <Img
             className="h-[120px] m-auto object-cover rounded-tl-lg rounded-tr-lg w-full"
-            src="images/img_unsplasheq9sa7tdtg.png"
+            src={props.card['image'].uri}
             alt="unsplasheq9sa7t"
           />
           <Button
-            className="absolute cursor-pointer flex items-center justify-center min-w-[125px]"
+            className="absolute cursor-pointer flex items-center justify-center min-w-[125px] completed-percent-bar"
             leftIcon={
-              <div className="h-3 mt-px mb-0.5 mr-1 w-3 bg-deep_orange-A100 top-[1%] bottom-[2%] right-[2%]">
+              <div className="h-3 mt-px mb-0.5 mr-1 w-3 top-[1%] bottom-[2%] right-[2%]">
                 <Img className="h-3" src="images/img_vector.svg" alt="Vector" />
               </div>
             }
@@ -110,7 +110,7 @@ const FrameThreeColumnunsplasheq9sa7t: React.FC<
                 className="text-gray-800 text-xs tracking-[0.18px] w-full"
                 size="txtPPNeueMontrealMedium12Gray800"
               >
-                {props?.janedoeregional}
+                {props.card['experts'][0]["firstName"]} {props.card['experts'][0]["lastName"]}
               </Text>
               <Text
                 className="text-gray-600 text-xs tracking-[0.18px] w-full"

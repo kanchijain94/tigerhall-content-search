@@ -238,3 +238,7 @@ ul li a {
   overflow: scroll;
   height: 500px;
 }
+
+.completed-percent-bar {
+  top: 0px;
+}
