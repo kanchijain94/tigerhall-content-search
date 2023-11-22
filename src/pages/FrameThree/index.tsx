@@ -7,6 +7,7 @@ import initialDetails from "../../data/initialDetails.js";
 const FrameThreePage: React.FC = () => {
   const [searchField, setSearchField] = useState("");
   const [searchShow, setSearchShow] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const filteredCards = initialDetails.filter(
     data => {
@@ -26,14 +27,15 @@ const FrameThreePage: React.FC = () => {
     }
     else {
       setSearchShow(true);
+      // setIsLoading(true);
     }
   };
 
   function searchList() {
-    const filtered = filteredCards.map(card => <FrameThreeColumnunsplasheq9sa7t className="flex flex-col h-[272px] md:h-auto items-start justify-start shadow-bs w-[244px]" key={card.name} card={card} />);
+    const filtered = filteredCards.map(card => <FrameThreeColumnunsplasheq9sa7t className="flex flex-col h-[272px] md:h-auto items-start justify-start shadow-bs w-[244px] card-div" key={card.name} card={card} />);
     if (searchShow) {
       return (
-        <div className="hover:cursor-pointer flex flex-col items-start justify-start p-2.5 hover:shadow-bs w-auto card-div">
+        <div className="hover:cursor-pointer flex flex-col items-start justify-start p-2.5 hover:shadow-bs w-auto">
           {filtered}
         </div>
       );
@@ -61,9 +63,10 @@ const FrameThreePage: React.FC = () => {
             </div>
           </div>
           <List
-            className="flex flex-col gap-3.5 items-center mb-[22px] w-[88%]"
+            className="flex flex-col gap-3.5 items-center mb-[22px] w-[88%] search-list"
             orientation="vertical"
           >
+            {/* {isLoading ? <p>Loading...</p> : null} */}
             {searchList()}
             {/* <div className="hover:cursor-pointer flex flex-col items-start justify-start p-2.5 hover:shadow-bs w-auto">
               <FrameThreeColumnunsplasheq9sa7t className="flex flex-col h-[272px] md:h-auto items-start justify-start shadow-bs w-[244px]" />

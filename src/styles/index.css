@@ -233,3 +233,8 @@ ul li a {
 .card-div {
   margin-bottom: 25px;
 }
+
+.search-list {
+  overflow: scroll;
+  height: 500px;
+}
