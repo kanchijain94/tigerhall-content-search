@@ -4,12 +4,27 @@ import { Button, Img, Line, List, Text } from "components";
 import FrameThreeColumnunsplasheq9sa7t from "components/FrameThreeColumnunsplasheq9sa7t";
 import initialDetails from "../../data/initialDetails.js";
 
+import { useExampleQueryQuery } from '../../generated/graphql';
+
 const FrameThreePage: React.FC = () => {
   const [searchField, setSearchField] = useState("");
   const [searchShow, setSearchShow] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const filteredCards = initialDetails.filter(
+  const { data, error, loading } = useExampleQueryQuery();
+  var newData: any = data ? data.contentCards.edges : data;
+  console.log(data);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error || !data) {
+    return <div>ERROR</div>;
+  }
+
+
+  const filteredCards = newData.filter(
     data => {
       return (
         data
