@@ -228,6 +228,7 @@ ul li a {
   background-color: rgb(56 54 50 / var(--tw-bg-opacity)) !important;
   border: none !important;
   color: white !important;
+  padding: 5px !important;
 }
 
 .card-div {
@@ -256,4 +257,9 @@ ul li a {
   position: absolute;
   bottom: 8px;
   right: 10px;
+}
+
+.main-div {
+  height: 500px;
+  ;
 }

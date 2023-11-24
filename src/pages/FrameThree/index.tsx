@@ -59,14 +59,14 @@ const FrameThreePage: React.FC = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-roboto sm:gap-10 md:gap-10 gap-[159px] items-start justify-start mx-auto p-[89px] md:px-10 sm:px-5 w-full">
+      <div className="bg-white-A700 flex flex-col font-roboto sm:gap-10 md:gap-10 gap-[159px] items-start justify-start mx-auto p-[89px] md:px-10 sm:px-5 w-full main-div">
         <Text
           className="md:ml-[0] ml-[167px] md:text-5xl text-[80px] text-black-900"
           size="txtRobotoBold80"
         >
           Tigerhall frontend assesment
         </Text>
-        <div className="bg-black-900_01 flex flex-col font-ppneuemontreal gap-3.5 items-center justify-start mb-[3066px] md:ml-[0] ml-[167px] p-[26px] md:px-5 md:w-full">
+        <div className="bg-black-900_01 flex flex-col font-ppneuemontreal gap-3.5 items-center justify-start mb-[3066px] md:ml-[0] p-[26px] md:px-5 w-full">
           <div className="flex flex-col h-10 md:h-auto items-start justify-start w-[244px]">
             <div className="bg-blue_gray-900 border border-gray-600 border-solid flex flex-col h-full items-center justify-start rounded w-full search-bar-div">
               <input
