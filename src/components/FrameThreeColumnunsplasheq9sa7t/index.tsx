@@ -52,10 +52,10 @@ const FrameThreeColumnunsplasheq9sa7t: React.FC<
               {props?.p30completed}
             </div>
           </Button>
-          <div className="flex flex-row items-center justify-between mt-auto mx-auto w-[94%] md:w-full">
+          <div className="flex flex-row items-center justify-between mt-auto mx-auto w-[94%] md:w-full button-div-height">
             <div className="flex flex-col items-start justify-start w-6">
               <Button
-                className="flex h-6 items-center justify-center w-6"
+                className="flex h-6 items-center justify-center w-6 button-speaker-position"
                 shape="circle"
                 color="orange_A700"
                 size="sm"
@@ -69,9 +69,9 @@ const FrameThreeColumnunsplasheq9sa7t: React.FC<
               </Button>
             </div>
             <Button
-              className="cursor-pointer flex items-center justify-center min-w-[59px] rounded-[12px]"
+              className="cursor-pointer flex items-center justify-center min-w-[59px] rounded-[12px] button-clock-position"
               leftIcon={
-                <div className="h-3 mr-1 w-3 bg-white-A700 my-px">
+                <div className="h-3 mr-1 w-3 my-px">
                   <Img className="h-3" src="images/img_clock.svg" alt="clock" />
                 </div>
               }

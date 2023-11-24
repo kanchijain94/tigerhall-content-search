@@ -242,3 +242,18 @@ ul li a {
 .completed-percent-bar {
   top: 0px;
 }
+
+.button-div-height {
+  height: 0px;
+}
+
+.button-speaker-position {
+  position: absolute;
+  bottom: 8px;
+}
+
+.button-clock-position {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+}
